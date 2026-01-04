@@ -1,0 +1,7 @@
+{
+  "name": "com.custom.coloredfolders",
+  "version": "1.0.0",
+  "displayName": "Colored Folders",
+  "description": "Customize your project tree for better organization. ",
+  "unity": "6.2"
+}
