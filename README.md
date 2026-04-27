@@ -1,3 +1,6 @@
+# !!! Disclaimer !!!
+This was weekend quick project and needs refactor
+
 # Colored Folders
 
 It's Unity package for customizing folders similiar to *Rainbow Folders 2*
