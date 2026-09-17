@@ -35,7 +35,7 @@ namespace ColoredFolders.Editor
         {
             bool isListView = selectionRect.height <= EditorGUIUtility.singleLineHeight + 2f;
 
-            if (isListView && ColoredFoldersStorage.Settings.EnableZebraStriping)
+            if (isListView && ColoredFoldersStorage.ColorsSettings.EnableZebraStriping)
             {
                 TryDrawZebraStrip(selectionRect);
             }
@@ -145,12 +145,12 @@ namespace ColoredFolders.Editor
 
         static void LoadColors()
         {
-            _folderColors = ColoredFoldersStorage.ColorsData;
+            _folderColors = ColoredFoldersStorage.ColorsSettings.ColorsData;
         }
         
         public static void ReloadColors(bool repaint = true)
         {
-            _folderColors = ColoredFoldersStorage.ColorsData;
+            _folderColors = ColoredFoldersStorage.ColorsSettings.ColorsData;
 
             if (repaint)
             {
